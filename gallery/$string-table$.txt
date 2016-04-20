@@ -1,2 +1,4 @@
 0000.png - picture of quickstatus command.
 0001.png - picture of quickn commands.
+0002.png - picture of archive command.
+0003.png - picture of after using archive.
