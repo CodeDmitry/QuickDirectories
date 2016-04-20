@@ -1,8 +1,8 @@
 #!/bin/bash
-uuid=`uuidgen`
+uuid=`perl uuidgen/uuidgen`
 
 echo "Before: "
-./quickstatus
+$QD_APPS/core/quickstatus/quickstatus
 
 mycdir=$QD_ARCHIVES/$uuid
 mkdir $mycdir
@@ -20,5 +20,5 @@ mkdir $QD_QUICK1 $QD_QUICK2 $QD_QUICK3 $QD_QUICK4\
       $QD_QUICK5 $QD_QUICK6 $QD_QUICK7 $QD_QUICK8
 
 echo "After: "
-quickstatus
+$QD_APPS/core/quickstatus/quickstatus
 echo -e "Archived into $mycdir."

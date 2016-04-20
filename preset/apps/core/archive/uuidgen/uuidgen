@@ -1,0 +1,18 @@
+#!/usr/bin/perl -w
+
+$QD_ARCHIVES = $ENV{'QD_ARCHIVES'};
+if (!$QD_ARCHIVES) {
+    die "no QD_ARCHIVES env variable.";
+}
+
+for (my $i = 0; $i <= 0xffffffff; ++$i) {
+    #if (-e $QD
+    my $tmp = sprintf("%08x", $i); 
+    
+    unless (-e "$QD_ARCHIVES/$tmp") {
+        print "$tmp";
+        last;
+    }    
+}
+
+
