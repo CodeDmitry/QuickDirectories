@@ -73,10 +73,6 @@ Screenshots:
 
   ![screenshot](gallery/0003.png)
 
-3. more core apps!
-
-4. make and share apps with friends!
-
 ## <a name="install">Installation</a>
 
 First of all, you download this repository.
