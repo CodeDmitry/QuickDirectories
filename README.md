@@ -17,7 +17,7 @@ Let me tell you how it works.
 1. 8 quick access directories that can be accessed by typing commands "quick1, quick2, ..., quick8". <br />
 8 directories is 1 more than number of things a person can keep track of in their head.
 
-![screenshot](./gallery/0000.bmp)
+![screenshot](/gallery/0000.bmp)
 
 2. ...
 
