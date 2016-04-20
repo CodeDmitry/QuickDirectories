@@ -7,9 +7,14 @@
     # exit code section begin.
         exit_success=0
         exit_unknown=1
+        exit_mkdir_root_fail=2
+        exit_copy_presets_fail=3
+        exit_clean_fail=4
+        exit_profile_dirty=5
     # end section.
 
     # global value section begin.
+        me=`basename $0`
         user=`id -u -n`
         qdpath=/home/$user/QuickDirs
     # end global value section.
@@ -19,16 +24,18 @@ function main()
 {
     if [ $# -eq 0 ]; then
         # no arguments: just do profiling.
-        profile
-        return $exit_success
+        (profile && return $?)
     elif [ $# -eq 1 ] && [ $1 == "clean" ]; then
         (clean && return $?)
     else
         # called in an unexpected way.
         echo "Unknown calling convention."
+        echo ""
         echo "calling info: "
         echo "    -argc => $#"
         echo "    -argv => $@"
+        echo ""
+
         return $exit_unknown
     fi
 }
@@ -37,23 +44,58 @@ function profile()
 {
     if [ -d "/home/$user/QuickDirs/" ]; then
         echo "Please delete $qdpath."
+        echo ""
         echo "This script will do it for you if you run it by: "
-        echo "    ./profiler.sh clean"
+        echo "    ./$me clean"
+        echo ""
+        return $exit_profile_dirty
     else
         echo "Your filesystem has no conflicts with QuickDirectories."
-        echo "It is safe to run the installer."
+        echo ""
+        echo "it is now safe to run ./configure."
+        echo ""
+        return $exit_success
     fi
 }
 
+##
+# Responsible for removing /home/$user/QuickDirs/
+#     directory from the filesystem.
+#
+# on error,
+##
 function clean()
 {
     if [ -d "$qdpath" ]; then
-        (rmdir $qdpath && return $?)
+        rm -rf $qdpath
+        err=$?
+
+        if [ $? -ne 0 ]; then
+            # rm did not return 0, we failed to clean.
+            echo "could not remove $qdpath from your filesystem."
+            echo ""
+            echo "rm returned with $err."
+            echo ""
+            return $exit_clean_fail
+        fi
+        echo "Successfully removed $qdpath from your filesystem."
+        echo ""
+        echo "It is now safe to run ./configure."
+        echo ""
     else
-        echo "the path \"$qdpath\" does not exist."
-        echo "there is nothing to clean."
+        echo "The path \"$qdpath\" does not exist."
+        echo ""
+        echo "There is nothing to clean."
+        echo ""
+
+        # not actually success, but it is a "normal" usecase.
+        return $exit_success
     fi
 }
 
-(main $@ && exit $?)
-                                             
+# procedure division
+    main $@
+    err=$?
+    echo "exitting with code $err."
+    exit $err
+# end
