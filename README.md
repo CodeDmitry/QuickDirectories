@@ -22,6 +22,8 @@ Let me tell you how it works.
 
 2. ability to archive workspace.
 ![screenshot](gallery/0002.png)
+> NOTE: the error was that it had a bug in showing quickstatus, no directories were harmed in the process.
+
 ![screenshot](gallery/0003.png)
 
 ## Installation
