@@ -1,12 +1,12 @@
-## QuickDirectories
+# QuickDirectories
 
-#### Table of Contents
+## Table of Contents
 
 * [Introduction](#intro)
 * [Features](#features)
 * [Installation](#install)
 
-#### <a name="intro">Introduction</a>
+## <a name="intro">Introduction</a>
 
 > QuickDirectories is a simple way of managing thinking space.
 
@@ -21,7 +21,7 @@ I call this way, QuickDirectories._
 
 Let me tell you how it works.
 
-#### <a name="features">Features</a>
+## <a name="features">Features</a>
 
 QuickDirectories has many core apps, and capacity to extend and modify.
 
@@ -33,7 +33,7 @@ QuickDirectories has many core apps, and capacity to extend and modify.
 * [...](#)
 * [...](#)
 
-##### quickstatus
+### quickstatus
 
 QuickDirectories gives you a special directory called tests which contains 8 folders named 
 
@@ -54,7 +54,7 @@ Screenshots:
   ![screenshot](gallery/0000.png)
   ![screenshot](gallery/0001.png)
 
-##### archive
+### archive
 
 QuickDirectories has the ability to archive your workspace's 8 test directories into an archive directory <br />
 that contains a file named date.txt.
@@ -77,7 +77,7 @@ Screenshots:
 
 4. make and share apps with friends!
 
-#### <a name="install">Installation</a>
+## <a name="install">Installation</a>
 
 First of all, you download this repository.
 
