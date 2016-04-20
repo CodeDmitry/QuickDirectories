@@ -21,7 +21,8 @@ Let me tell you how it works.
 ![screenshot](gallery/0001.png)
 
 2. ability to archive workspace.
-
+![screenshot](gallery/0002.png)
+![screenshot](gallery/0003.png)
 
 ## Installation
 
