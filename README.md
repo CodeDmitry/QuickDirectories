@@ -20,7 +20,7 @@ Let me tell you how it works.
 ![screenshot](gallery/0000.png)
 ![screenshot](gallery/0001.png)
 
-2. ability to archive workspace.
+2. ability to archive workspace. <br />
 ![screenshot](gallery/0002.png)
 
 > NOTE: the error was that it had a bug in showing quickstatus, no directories were harmed in the process.
