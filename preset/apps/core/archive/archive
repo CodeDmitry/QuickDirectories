@@ -1,0 +1,24 @@
+#!/bin/bash
+uuid=`uuidgen`
+
+echo "Before: "
+./quickstatus
+
+mycdir=$QD_ARCHIVES/$uuid
+mkdir $mycdir
+mv $QD_QUICK1 $mycdir
+mv $QD_QUICK2 $mycdir
+mv $QD_QUICK3 $mycdir
+mv $QD_QUICK4 $mycdir
+mv $QD_QUICK5 $mycdir
+mv $QD_QUICK6 $mycdir
+mv $QD_QUICK7 $mycdir
+mv $QD_QUICK8 $mycdir
+date > $mycdir/date.txt
+
+mkdir $QD_QUICK1 $QD_QUICK2 $QD_QUICK3 $QD_QUICK4\
+      $QD_QUICK5 $QD_QUICK6 $QD_QUICK7 $QD_QUICK8
+
+echo "After: "
+quickstatus
+echo -e "Archived into $mycdir."
