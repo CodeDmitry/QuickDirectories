@@ -1,6 +1,12 @@
 ## QuickDirectories
 
-#### Introduction
+#### Table of Contents
+
+* [Introduction](#intro)
+* [Features](#features)
+* [Installation](#install)
+
+#### <a name="intro">Introduction</a>
 
 > QuickDirectories is a simple way of managing thinking space.
 
@@ -15,7 +21,7 @@ I call this way, QuickDirectories._
 
 Let me tell you how it works.
 
-#### Features
+#### <a name="features">Features</a>
 1. 8 quick access directories that can be accessed by typing commands "quick1, quick2, ..., quick8". <br />
   8 directories is 1 more than number of things a person can keep track of in their head.
 
@@ -33,7 +39,7 @@ Let me tell you how it works.
 
 4. make and share apps with friends!
 
-## Installation
+#### <a name="install">Installation</a>
 
 First of all, you download this repository.
 
