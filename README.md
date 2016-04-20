@@ -15,9 +15,17 @@ Let me tell you how it works.
 
 ## Features
 1. 8 quick access directories that can be accessed by typing commands "quick1, quick2, ..., quick8". <br />
-8 directories is 1 more than number of things a person can keep track of in their head.
+  8 directories is 1 more than number of things a person can keep track of in their head.
 
-2. ...
+  ![screenshot](gallery/0000.png)
+  ![screenshot](gallery/0001.png)
+
+2. ability to archive workspace. <br />
+  ![screenshot](gallery/0002.png)
+
+  > NOTE: the error was that it had a bug in showing quickstatus, no directories were harmed in the process.
+
+  ![screenshot](gallery/0003.png)
 
 ## Installation
 
