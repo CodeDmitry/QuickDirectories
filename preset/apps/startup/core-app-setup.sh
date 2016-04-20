@@ -5,7 +5,7 @@
 # sets up default apps.
 ##
 
-echo -e "core-app-startup> \e[32mdone\e[0m"
+echo -e "core-app-startup> \e[32mrunning\e[0m"
 
 # perform tests.
 which perl
@@ -26,4 +26,4 @@ if [ $perltest -eq 0 ]; then
 else
 fi
 
-echo -e "core-app-startup> \e[32mrunning\e[0m"
+echo -e "core-app-startup> \e[32mdone\e[0m"
