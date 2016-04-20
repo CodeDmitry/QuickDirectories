@@ -1,0 +1,45 @@
+#!/usr/bin/perl
+use Env qw(QD_QUICK1 QD_QUICK2 QD_QUICK3 QD_QUICK4);
+use Env qw(QD_QUICK5 QD_QUICK6 QD_QUICK7 QD_QUICK8);
+
+my ($s1, $s2, $s3, $s4, $s5, $s6, $s7, $s8) = (
+    dirstat($QD_QUICK1),
+    dirstat($QD_QUICK2),
+    dirstat($QD_QUICK3),
+    dirstat($QD_QUICK4),
+    dirstat($QD_QUICK5),
+    dirstat($QD_QUICK6),
+    dirstat($QD_QUICK7),
+    dirstat($QD_QUICK8)
+);
+
+my $ready= "\e[32mready\e[0m";
+my $active= "\e[31mactive\e[0m";
+
+printf("\n");
+printf("%s.\t", $s1 == 0 ? "quick1 is $ready" : "quick1 is $active");
+printf("%s.\n", $s5 == 0 ? "quick5 is $ready" : "quick5 is $active");
+
+printf("%s.\t", $s2 == 0 ? "quick2 is $ready" : "quick2 is $active");
+printf("%s.\n", $s6 == 0 ? "quick6 is $ready" : "quick6 is $active");
+
+printf("%s.\t", $s3 == 0 ? "quick3 is $ready" : "quick3 is $active");
+printf("%s.\n", $s7 == 0 ? "quick7 is $ready" : "quick7 is $active");
+
+printf("%s.\t", $s4 == 0 ? "quick4 is $ready" : "quick4 is $active");
+printf("%s.\n", $s8 == 0 ? "quick8 is $ready" : "quick8 is $active");
+printf("\n");
+
+# returns 0 if empty
+# returns 1 if active
+sub dirstat
+{
+    my $dirname = $_[0];
+
+    opendir my $dir, $dirname or die $!;
+
+    if( grep ! /^\.\.?$/, readdir $dir ){
+        return 1;
+    }
+    return 0;
+}
