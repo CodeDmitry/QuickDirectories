@@ -1,0 +1,59 @@
+#!/bin/bash
+# -
+# checks if the path is safe for installation.
+# -
+
+# global data division begin.
+    # exit code section begin.
+        exit_success=0
+        exit_unknown=1
+    # end section.
+
+    # global value section begin.
+        user=`id -u -n`
+        qdpath=/home/$user/QuickDirs
+    # end global value section.
+ # end division.
+
+function main()
+{
+    if [ $# -eq 0 ]; then
+        # no arguments: just do profiling.
+        profile
+        return $exit_success
+    elif [ $# -eq 1 ] && [ $1 == "clean" ]; then
+        (clean && return $?)
+    else
+        # called in an unexpected way.
+        echo "Unknown calling convention."
+        echo "calling info: "
+        echo "    -argc => $#"
+        echo "    -argv => $@"
+        return $exit_unknown
+    fi
+}
+
+function profile()
+{
+    if [ -d "/home/$user/QuickDirs/" ]; then
+        echo "Please delete $qdpath."
+        echo "This script will do it for you if you run it by: "
+        echo "    ./profiler.sh clean"
+    else
+        echo "Your filesystem has no conflicts with QuickDirectories."
+        echo "It is safe to run the installer."
+    fi
+}
+
+function clean()
+{
+    if [ -d "$qdpath" ]; then
+        (rmdir $qdpath && return $?)
+    else
+        echo "the path \"$qdpath\" does not exist."
+        echo "there is nothing to clean."
+    fi
+}
+
+(main $@ && exit $?)
+                                             
