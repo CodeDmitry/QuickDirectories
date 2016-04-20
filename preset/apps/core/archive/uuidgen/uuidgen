@@ -5,9 +5,6 @@ if (!$QD_ARCHIVES) {
     die "no QD_ARCHIVES env variable.";
 }
 
-opendir DIR, $QD_ARCHIVES
-    or die "$!";
-
 for (my $i = 0; $i <= 0xffffffff; ++$i) {
     #if (-e $QD
     my $tmp = sprintf("%08x", $i); 
@@ -17,7 +14,5 @@ for (my $i = 0; $i <= 0xffffffff; ++$i) {
         last;
     }    
 }
-
-closedir DIR;
 
 
