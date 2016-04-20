@@ -22,13 +22,51 @@ I call this way, QuickDirectories._
 Let me tell you how it works.
 
 #### <a name="features">Features</a>
-1. 8 quick access directories that can be accessed by typing commands "quick1, quick2, ..., quick8". <br />
-  8 directories is 1 more than number of things a person can keep track of in their head.
+
+QuickDirectories has many core apps, and capacity to extend and modify.
+
+<a name="core-apps">Core Apps</a>
+
+* [quickstatus](#quickstatus)
+* [archive](#archive)
+* [...](#)
+* [...](#)
+* [...](#)
+
+##### quickstatus
+
+QuickDirectories gives you a special directory called tests which contains 8 folders named 
+
+* quick1
+* quick2
+* quick3
+* quick4
+* quick5
+* quick6
+* quick7
+* quick8
+
+I decided that 8 folders is one more thing than the number of things a human can remember, and at that point, you <br />
+may as well make a new subdirectory, or [archive](#archive) what you have.
+
+Screenshots:
 
   ![screenshot](gallery/0000.png)
   ![screenshot](gallery/0001.png)
 
-2. ability to archive workspace. <br />
+##### archive
+
+QuickDirectories has the ability to archive your workspace's 8 test directories into an archive directory <br />
+that contains a file named date.txt.
+
+It is up to you to rename the archive to something meaningful by typing "@qd-archives", and editing the archive name.
+
+It is worth noting that the archives are created using UUIDs, which means it is possible for them to collide, but <br />
+the odds of that happening are low beyond any number you can possibly write out on a piece of paper, <br />
+so for the meantime, be aware of that risk if you are not renaming archives regularly.
+
+Screenshots:
+
   ![screenshot](gallery/0002.png)
 
   > NOTE: the error was that it had a bug in showing quickstatus, no directories were harmed in the process.
