@@ -18,6 +18,7 @@ Let me tell you how it works.
 8 directories is 1 more than number of things a person can keep track of in their head.
 
 ![screenshot](gallery/0000.png)
+![screenshot](gallery/0001.png)
 
 2. ...
 
