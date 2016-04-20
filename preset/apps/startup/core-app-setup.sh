@@ -25,4 +25,11 @@ else
     echo ""
 fi
 
+<<<<<<< HEAD
+=======
+if [ $perltest -eq 0 ]; then
+else
+fi
+
+>>>>>>> 1fa21cb2aa4a9e1a554b80273b6ec1800aaf4e6e
 echo -e "core-app-startup> \e[32mdone\e[0m"
