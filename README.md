@@ -20,7 +20,8 @@ Let me tell you how it works.
 ![screenshot](gallery/0000.png)
 ![screenshot](gallery/0001.png)
 
-2. ...
+2. ability to archive workspace.
+
 
 ## Installation
 
