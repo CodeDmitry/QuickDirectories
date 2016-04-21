@@ -40,11 +40,12 @@ may as well make a new subdirectory, or [archive](#archive) what you have.
 
 Screenshots:
 
-  ![screenshot](gallery/0000.png)
-  ![screenshot](gallery/0001.png)
-  ![screenshot](gallery/0002.png)
-  ![screenshot](gallery/0005.png)
   ![screenshot](gallery/0006.png)
+
+<img src="gallery/0000.png" width="125" height="60" />
+<img src="gallery/0001.png" width="125" height="60" />
+<img src="gallery/0002.png" width="125" height="60" />
+<img src="gallery/0005.png" width="125" height="60" />
 
 ### archive
 
@@ -58,13 +59,15 @@ the odds of that happening are low beyond any number you can possibly write out 
 so for the meantime, be aware of that risk if you are not renaming archives regularly.
 
 Screenshots:
+![screenshot](gallery/0007.png)
 
-  ![screenshot](gallery/0002.png)
+<img src="gallery/0003.png" width="125" height="60"  />
+<img src="gallery/0002.png" width="125" height="60" />
 
-  > NOTE: the error was that it had a bug in showing quickstatus, no directories were harmed in the process.
+> NOTE: the error was that it had a bug in showing quickstatus, no directories were harmed in the process.
 
-  ![screenshot](gallery/0003.png)
-  ![screenshot](gallery/0007.png)
+
+
 
 ## <a name="install">Installation</a>
 
