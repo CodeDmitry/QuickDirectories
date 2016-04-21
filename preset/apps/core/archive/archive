@@ -1,6 +1,6 @@
 #!/bin/bash
-chmod u+x uuidgen/uuidgen
-uuid=`perl "uuidgen/uuidgen"`
+me=`dirname $0`
+uuid=`perl "$me/uuidgen/uuidgen"`
 
 echo "Before: "
 $QD_APPS/core/quickstatus/quickstatus
