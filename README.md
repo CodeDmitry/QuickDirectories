@@ -59,6 +59,7 @@ the odds of that happening are low beyond any number you can possibly write out 
 so for the meantime, be aware of that risk if you are not renaming archives regularly.
 
 Screenshots:
+
 ![screenshot](gallery/0007.png)
 
 <img src="gallery/0003.png" width="125" height="60"  />
