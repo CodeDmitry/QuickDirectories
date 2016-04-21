@@ -84,6 +84,7 @@ source $HOME/QuickDirs/apps/startup/min-setup.sh
 source $HOME/QuickDirs/apps/startup/core-app-setup.sh
 source $HOME/QuickDirs/apps/startup/my-app-setup.sh
 ```
+**Note**: profile configuration file is normally ~/.profile or ~/.bashrc
 
 Restart your shell and QuickDirectories should be installed.
 
