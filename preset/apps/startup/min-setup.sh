@@ -14,9 +14,9 @@
  # end division.
 
 # procedure division
-echo -e "min-startup> \e[32mrunning\e[0m"
+echo -e "min-startup> \x1b[32mrunning\x1b[0m"
 
-export QD_HOME=/home/$user/QuickDirs
+export QD_HOME=$HOME/QuickDirs
 export QD_TEMPLATES=$QD_HOME/my_templates
 export QD_APPS=$QD_HOME/apps
 export QD_TESTS=$QD_HOME/my_tests
@@ -42,7 +42,7 @@ alias quick5="cd $QD_QUICK5"
 alias quick6="cd $QD_QUICK6"
 alias quick7="cd $QD_QUICK7"
 alias quick8="cd $QD_QUICK8"
-echo -e "min-startup> \e[32mdone\e[0m"
+echo -e "min-startup> \x1b[32mdone\x1b[0m"
 
 return $exit_success
 # end division.

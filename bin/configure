@@ -65,6 +65,17 @@ function configure()
         return $exit_copy_presets_fail
     fi
 
+    mkdir $qdpath/my_archives
+    mkdir $qdpath/my_tests
+    mkdir $qdpath/my_tests/quick1
+    mkdir $qdpath/my_tests/quick2
+    mkdir $qdpath/my_tests/quick3
+    mkdir $qdpath/my_tests/quick4
+    mkdir $qdpath/my_tests/quick5
+    mkdir $qdpath/my_tests/quick6
+    mkdir $qdpath/my_tests/quick7
+    mkdir $qdpath/my_tests/quick8
+
     echo "Configuration completed successfully!"
     echo ""
     echo "root directory preview($qdpath):"
