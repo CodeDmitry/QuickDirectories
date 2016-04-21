@@ -91,9 +91,9 @@ Modify your bash profile to run the setup script by adding the following lines:
 
 ```
 user=`id -u -n`
-source /home/$user/QuickDirs/apps/startup/min-setup.sh
-source /home/$user/QuickDirs/apps/startup/core-app-setup.sh
-source /home/$user/QuickDirs/apps/startup/my-app-setup.sh
+source $HOME/QuickDirs/apps/startup/min-setup.sh
+source $HOME/QuickDirs/apps/startup/core-app-setup.sh
+source $HOME/QuickDirs/apps/startup/my-app-setup.sh
 ```
 
 Restart your shell and QuickDirectories should be installed.
