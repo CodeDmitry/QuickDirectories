@@ -1,5 +1,6 @@
 #!/bin/bash
-uuid=`perl uuidgen/uuidgen`
+chmod u+x uuidgen/uuidgen
+uuid=`perl "uuidgen/uuidgen"`
 
 echo "Before: "
 $QD_APPS/core/quickstatus/quickstatus

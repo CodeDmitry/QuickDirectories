@@ -76,6 +76,8 @@ function configure()
     mkdir $qdpath/my_tests/quick7
     mkdir $qdpath/my_tests/quick8
 
+    chmod -R u+rwx $qdpath/my_apps/
+
     echo "Configuration completed successfully!"
     echo ""
     echo "root directory preview($qdpath):"
