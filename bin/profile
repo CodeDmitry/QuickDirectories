@@ -16,7 +16,7 @@
     # global value section begin.
         me=`basename $0`
         user=`id -u -n`
-        qdpath=/home/$user/QuickDirs
+        qdpath=$HOME/QuickDirs
     # end global value section.
  # end division.
 

@@ -14,7 +14,7 @@
 
     # global value section begin.
         user=`id -u -n`
-        qdpath=/home/$user/QuickDirs
+        qdpath=$HOME/QuickDirs
         pspath=../preset
     # end global value section.
  # end division.
@@ -68,7 +68,7 @@ function configure()
     echo "Configuration completed successfully!"
     echo ""
     echo "root directory preview($qdpath):"
-    ls --color $qdpath
+    ls -l $qdpath
     echo ""
 }
 
