@@ -8,7 +8,7 @@
 
 ## <a name="intro">Introduction</a>
 
-> QuickDirectories is a simple way of managing thinking space.
+> QuickDirectories is a simple way of managing programming workspace.
 
 ## <a name="features">Features</a>
 
