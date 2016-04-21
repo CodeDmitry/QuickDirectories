@@ -1,5 +1,7 @@
 # QuickDirectories
 
+![Banner](gallery/Banner.png)
+
 ## Table of Contents
 
 * [Introduction](#intro)
