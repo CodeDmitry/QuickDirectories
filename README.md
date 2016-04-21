@@ -1,4 +1,4 @@
-# QuickDirectories
+![Banner](gallery/Banner2.png)
 
 ## Table of Contents
 
