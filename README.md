@@ -10,17 +10,6 @@
 
 > QuickDirectories is a simple way of managing thinking space.
 
-Programmers often struggle to find that nice and simple structure for managing our current tasks. 
-
-Our current projects become old projects, and we just don't know where to put all of those old projects.
-
-I came up with a nice and simple way of managing your thinking space so that you have a nice amount of working space, 
-and ability to archive current workspaces for later.
-
-I call this way, QuickDirectories._
-
-Let me tell you how it works.
-
 ## <a name="features">Features</a>
 
 QuickDirectories has many core apps, and capacity to extend and modify.
