@@ -1,4 +1,4 @@
-![Banner](gallery/Banner.png)
+![Banner](gallery/Banner2.png)
 
 ## Table of Contents
 
