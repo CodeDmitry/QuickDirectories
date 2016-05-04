@@ -6,3 +6,5 @@
 0005.png - a mac picture.
 0006.png - a mac picture.
 0007.png - a mac picture.
+Banner.png - a banner.
+Banner2.png - another banner.
