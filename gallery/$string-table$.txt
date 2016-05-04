@@ -2,3 +2,7 @@
 0001.png - picture of quickn commands.
 0002.png - picture of archive command.
 0003.png - picture of after using archive.
+0004.png - a mac picture.
+0005.png - a mac picture.
+0006.png - a mac picture.
+0007.png - a mac picture.
