@@ -1,0 +1,60 @@
+{
+    "configure": {
+        "description": [
+            "The configure script acts as an installer."
+        ],
+        "purpose": [
+            "automate placing of package folders and files to make ",
+            "getting QuickDirectories running easier."
+        ],
+        "dependencies": []
+    },
+    "profile": {
+        "description": [
+            "The profile script has two functions. ",
+            "The first function is to inspect the system ",
+            "to see if the installer will be able to succeed. ",
+            "The second function is to uninstall QuickDirectories."
+        ],
+        "purpose": [
+            "avoid installation problems by detecting them before running the installer."
+        ],
+        "dependencies": []
+    },
+    "primary": {
+        "description": [
+            "There are two primary features of QuickDirectories. ",
+            "The first is to type quickstatus to view which quick ",
+            "directories are active(in use), and which are ready(available). "
+            "The second is to type quick[1..8] to change the active directory "
+            "to the specified quick directory."
+        ],
+        "purpose": ["main purpose of the package."],
+        "dependencies": []
+    },
+    "archive": {
+        "description": [
+            "The archive feature archives the eight current quick directories in "
+            "the QD_ARCHIVES env variable folder, which can be visited by typing "
+            "@qd-archives. This feature stores the date of the archiving in "
+            "the archive's folder to help identify it."
+        ],
+        "dependencies": [
+            {
+                "name": "uuidgen", 
+                "description": [ 
+                    "uuidgen is a PERL script located in archive's "
+                    "that checks QD_ARCHIVE environment variable to find "
+                    "the path to the archive directory, and counts from 0 "
+                    "until it finds a number that can be used for a directory "
+                    "making sure it is not already existing. "
+                    "it then outputs the number to stdout."
+                ]
+                "purpose": [ 
+                    "finds a unique folder name for the archive to be stored in."
+                ],
+                "dependencies": []
+            }
+        ]
+    }
+}
