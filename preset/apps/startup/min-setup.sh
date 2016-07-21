@@ -43,6 +43,4 @@ alias quick6="cd $QD_QUICK6"
 alias quick7="cd $QD_QUICK7"
 alias quick8="cd $QD_QUICK8"
 echo -e "min-startup> \x1b[32mdone\x1b[0m"
-
-return $exit_success
 # end division.

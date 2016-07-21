@@ -7,6 +7,9 @@ You can also just do:
 cp setup.sh > /usr/bin/@qd-setup
 chmod u+x setup.sh > /usr/bin/@qd-setup
 
-and run @qd-setup when you want to start using quick directories.
+and run 
+    source @qd-setup 
+
+when you want to start using quick directories.
 
 
