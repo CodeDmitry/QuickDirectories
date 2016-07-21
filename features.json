@@ -49,7 +49,7 @@
                     "until it finds a number that can be used for a directory "
                     "making sure it is not already existing. "
                     "it then outputs the number to stdout."
-                ]
+                ],
                 "purpose": [ 
                     "finds a unique folder name for the archive to be stored in."
                 ],
