@@ -1,0 +1,27 @@
+{
+    "name": "QuickDirectories",
+    "version": "1.0.0",
+    "description": "productive thinking space system.",
+    "homepage": "https://github.com/dmitrymakhnin/QuickDirectories",
+    "files": [
+        "README.md",
+        "package.json",
+        "bin/configure",
+        "bin/profile",
+        "features.json",
+        "manual/setting-path.txt",
+        "preset/apps/core/archive/archive",
+        "preset/apps/core/archive/uuidgen/uuidgen",
+        "preset/apps/core/quickstatus/quickstatus",
+        "preset/apps/startup/setup.sh",
+        "preset/apps/startup/core-app-setup.sh",
+        "preset/apps/startup/min-setup.sh",
+        "preset/apps/startup/my-app-setup.sh"
+    ],
+    "scripts": {
+        "configure": "bash bin/configure",
+        "profile": "bash bin/profile",
+        "test-package-format": "echo if you see this, package.json is well formed.",
+        "test-package-includes": "bash testWrapper.sh"        
+    }
+}
