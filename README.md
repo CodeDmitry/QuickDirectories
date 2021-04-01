@@ -73,7 +73,9 @@ Screenshots:
 
 ## <a name="install">Installation</a>
 
-First of all, you download this repository.
+First of all, you download this repository.(Manually or by using `git clone https://github.com/CodeDmitry/QuickDirectories`).
+
+Go to QuickDirectories directory you downloaded.
 
 Go to bin directory.
 
@@ -83,7 +85,7 @@ This step will warn you if any of your directories overlap with directories the 
 After running the profiler, run the configuration script by typing ./configure and the script will set up <br />
 all the directories, and put all the files in the right places.
 
-Modify your bash profile to run the setup script by adding the following lines:
+Modify your bash profile to run the setup script by adding the following lines(see note below for details):
 
 ```
 user=`id -u -n`
