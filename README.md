@@ -4,6 +4,7 @@
 
 * [Introduction](#intro)
 * [Features](#features)
+* [Shortcuts](#shortcuts)
 * [Installation](#install)
 * [Removal](#remove)
 
