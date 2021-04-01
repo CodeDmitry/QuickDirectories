@@ -23,6 +23,9 @@ QuickDirectories has many core apps, and capacity to extend and modify.
 * [...](#)
 * [...](#)
 
+### quick1..quick8
+use these commands to quickly jump between the 8 directories. 
+
 ### quickstatus
 
 QuickDirectories gives you a special directory called tests which contains 8 folders named 
