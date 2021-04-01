@@ -79,9 +79,8 @@ QuickDirectories introduces additional shortcuts to your shell:
 @qd-tests: takes you to the directory containing quick1-quick8 directories.<br />
 @qd-archives: takes you to the directory containins archives(to store your quick1..quick8 directories, type `archive`).<br />
 @qd-home: sets your current directory to quickdirs home. <br />
-@qd-templates: sets your current directory to a templates directory you can use to store things you tend to reuse. <br />
 @qd-apps: sets your current directory to quickdirs apps directory. <br />
-the above also have a hard path variable for each of them, such as $QD_QUICK1..$QD_QUICK8, $QD_ARCHIVES, $QD_TESTS, $QD_HOME, $QD_TEMPLATES, $QD_APPS, and $QD_TESTS.
+the above also have a hard path variable for each of them, such as $QD_QUICK1..$QD_QUICK8, $QD_ARCHIVES, $QD_TESTS, $QD_HOME, $QD_APPS, and $QD_TESTS.
 
 ## <a name="install">Installation</a>
 
