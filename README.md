@@ -5,6 +5,7 @@
 * [Introduction](#intro)
 * [Features](#features)
 * [Installation](#install)
+* [Removal](#remove)
 
 ## <a name="intro">Introduction</a>
 
@@ -74,6 +75,8 @@ Screenshots:
 
 First of all, you download this repository.
 
+Go to bin directory.
+
 Then you run ./profile to let you know whether your filesystem structure is compatible with QuickDirectories. <br />
 This step will warn you if any of your directories overlap with directories the the configuration script will try to create.
 
@@ -88,9 +91,10 @@ source $HOME/QuickDirs/apps/startup/min-setup.sh
 source $HOME/QuickDirs/apps/startup/core-app-setup.sh
 source $HOME/QuickDirs/apps/startup/my-app-setup.sh
 ```
-**Note**: profile configuration file is normally ~/.profile or ~/.bashrc
+**Note**: profile configuration file is normally ~/.profile or ~/.bashrc but you can google where yours is depending on what system you are using(Mac, Ubuntu, MinGW, etc)
 
 Restart your shell and QuickDirectories should be installed.
 
-
+## <a name="remove">Removal</a>
+To remove/uninstall QuickDirectories, go to the bin directory of this project and run `./configure clean`
 
