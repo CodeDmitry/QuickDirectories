@@ -92,13 +92,6 @@ Modify your bash profile to run the setup script by adding the following lines(s
 
 ```
 user=`id -u -n`
-source $HOME/QuickDirs/apps/startup/setup.sh
-```
-
-alternatively
-
-```
-user=`id -u -n`
 source $HOME/QuickDirs/apps/startup/min-setup.sh
 source $HOME/QuickDirs/apps/startup/core-app-setup.sh
 source $HOME/QuickDirs/apps/startup/my-app-setup.sh
