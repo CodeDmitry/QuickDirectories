@@ -66,9 +66,11 @@ Screenshots:
 QuickDirectories has the ability to archive your workspace's 8 test directories into an archive directory <br />
 that contains a file named date.txt. To figure out where the archive directory is, use  the command `echo $QD_ARCHIVES`, or to
 instantly jump to the archive directory, type `@qd-archives` which are configured as aliases by min-setup.sh in a `$QD_APPS` directory
-(visit by typing `@qd-apps`) in the core directory.
+(visit by typing `@qd-apps`) in the core directory. 
 
-It is up to you to rename the archive to something meaningful by typing "@qd-archives", and editing the archive name.
+It is up to you to rename the archive to something meaningful by typing "@qd-archives", and editing the archive name(Which is initially a number generated
+specifically not to conflict with the other archives). At time of writing, I reccomend compressing your archived directory with 7zip, to avoid
+future issues with having to move many small files, which is very slow).
 
 It is worth noting that the archives are created using UUIDs, which means it is possible for them to collide, but <br />
 the odds of that happening are low beyond any number you can possibly write out on a piece of paper, <br />
