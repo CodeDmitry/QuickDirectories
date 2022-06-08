@@ -10,7 +10,7 @@
 
 ## <a name="intro">Introduction</a>
 
-> QuickDirectories is a simple way of managing programming workspace. That is, it lets you jump very easily between 8 workspaces, 
+> QuickDirectories is a simple way of managing programming workspace. That is, it lets you jump around very easily between 8 workspaces, 
 > making writing quick and dirty proofs of concepts, exercises, quick and easy. It also offers basic features such as flushing the 
 > eight directories into an archive directory. Made largely in Perl(and some PHP for package-verification) because it is always there. 
 > This project has been tested to work on old systems, as well as mac, and mingw/msys2. 
