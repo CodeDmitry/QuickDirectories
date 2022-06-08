@@ -27,7 +27,7 @@ QuickDirectories has many core apps, and capacity to extend and modify.
 
 <a name="core-apps">Core Apps</a>
 
-* [quickstatus](#quickstatus)
+* [quickstatus](#quickstatus) 
 * [archive](#archive)
 * [...](#)
 * [...](#)
@@ -64,7 +64,9 @@ Screenshots:
 ### archive
 
 QuickDirectories has the ability to archive your workspace's 8 test directories into an archive directory <br />
-that contains a file named date.txt.
+that contains a file named date.txt. To figure out where the archive directory is, use  the command `echo $QD_ARCHIVES`, or to
+instantly jump to the archive directory, type `@qd-archives` which are configured as aliases by min-setup.sh in a `$QD_APPS` directory
+(visit by typing `@qd-apps`) in the core directory.
 
 It is up to you to rename the archive to something meaningful by typing "@qd-archives", and editing the archive name.
 
