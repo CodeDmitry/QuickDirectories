@@ -12,7 +12,7 @@
 
 > QuickDirectories is a simple way of managing programming workspace. That is, it lets you jump around very easily between 8 workspaces, 
 > making writing quick and dirty proofs of concepts, exercises, quick and easy. It also offers basic features such as flushing the 
-> eight directories into an archive directory. Made largely in Perl(and some PHP for package-verification) because it is always there. 
+> eight directories into an archive directory. Made largely in Bash and Perl(and some PHP for package-verification) because they are always there. 
 > This project has been tested to work on old systems, as well as mac, and mingw/msys2. 
 > I use this tool daily when I have any quick and dirty code I want to write. 
 > This project lets me very quickly go to "quickX" and write my proof of concept, or if I am very lazy, I can just get comfortable using
