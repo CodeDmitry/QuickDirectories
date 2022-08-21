@@ -4,7 +4,7 @@
 # |     path of test.php without breaking familiarity.
 
 if [[ $(command -v php) ]]; then
-    echo "running test.php";
+    echo "Running test.php";
     php test.php;
 else
     echo 'Sorry, package integrity checking requires PHP to be installed.';
