@@ -47,13 +47,4 @@ function main()
     fi
 }
 
-
-
-
-
-
-
-
-
-
 (main $@ && exit $?)
