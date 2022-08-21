@@ -22,7 +22,12 @@ function main()
     echo $#
   
     if [ $# -eq 0 ]; then
-        # no arguments.
+        # | Default usage, no arguments. Sadly 
+        # |     argument variants were abandoned because
+        # |     of the nation of bashrc file. We do not
+        # |     want to risk corrupting bashrc, so we
+        # |     only say how to install, rather than install
+        # |     it ourselves.
         echo "steps this installer should do:"
         echo "1. check if the system is compatible."
         echo "2. create the home directory."
