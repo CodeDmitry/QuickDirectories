@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # | @file testWrapper.sh 
 # | Responsible for running test.php, but enables us to
 # |     change to something else other than PHP or change
