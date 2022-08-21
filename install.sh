@@ -47,4 +47,6 @@ function main()
     fi
 }
 
+# | Run main with our arguments, and 
+# |     if it succeeds, return its' return value.
 (main $@ && exit $?)
