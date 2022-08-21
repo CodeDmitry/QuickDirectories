@@ -1,6 +1,10 @@
 #!/bin/bash
-# | Sets up the basic QuickDirectories environment
-# |     that the user and other scripts may rely on.
+
+# | @file min-setup.sh
+# | Responsible for setting up the basic 
+# |     QuickDirectories environment that the user and 
+# |     scripts may rely upon to know where the important
+# |     locations are located.
 
 # | TODO: verify these vestigial variables are 
 # |     harmless to remove, they do not seem  to
