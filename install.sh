@@ -18,6 +18,7 @@ pspath=../preset
 
 function main()
 {
+    # | Echo argument count for debugging purposes.
     echo $#
   
     if [ $# -eq 0 ]; then
