@@ -36,7 +36,8 @@ function main()
         echo "      to avoid over-installation clutter. "
         
     else
-        # called in an unexpected way.
+        # | Called in an unexpected way(not implemented),
+        # |     at the moment argument count has to be 0.
         echo "Unknown calling convention."
         echo ""
         echo "calling info: "
