@@ -2,6 +2,9 @@
 # | Sets up the basic QuickDirectories environment
 # |     that the user and other scripts may rely on.
 
+# | TODO: verify these vestigial variables are 
+# |     harmless to remove, they do not seem  to
+# |     be of any use anymore.
 # | We are assigning a few script-local variables.
 exit_success=0
 user=`id -u -n`
