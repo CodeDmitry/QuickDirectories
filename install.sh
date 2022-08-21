@@ -1,20 +1,20 @@
 #!/bin/bash
-##
-# smart installer.
-##
 
-# global data division begin.
-    # exit code section begin.
-        exit_success=0
-        exit_unknown=1
-    # end section.
+# | @file install.sh
+# | Responsible for guiding the user through the 
+# |     installation.
+# | Unfortunately, the installation involves modifying
+# |     the bashrc file, which we cannot automate because
+# |     is it a very customized file, so the user has to
+# |     do it themselves because we do not know whether
+# |     appending code blindly to that file is safe.
 
-    # global value section begin.
-        user=`id -u -n`
-        qdpath=/home/$user/QuickDirs
-        pspath=../preset
-    # end global value section.
- # end division.
+# | We are assigning a few script-local variables.
+exit_success=0
+exit_unknown=1
+user=`id -u -n`
+qdpath=/home/$user/QuickDirs
+pspath=../preset
 
 function main()
 {
