@@ -2,7 +2,7 @@
     "name": "QuickDirectories",
     "version": "1.0.0",
     "description": "productive thinking space system.",
-    "homepage": "https://github.com/dmitrymakhnin/QuickDirectories",
+    "homepage": "https://github.com/CodeDmitry/QuickDirectories",
     "files": [
         "README.md",
         "package.json",
