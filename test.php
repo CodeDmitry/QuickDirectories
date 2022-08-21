@@ -4,7 +4,9 @@
 # |     quickdirs files before installing.
 # | At the moment it simply checks if the files exist,
 # |     it does not actually check if they are the correct files.
-# | Why PHP? Because it's my project and I feel like using PHP.
+# | Why PHP? Because PHP has a JSON parser, whereas 
+# |     Perl/bash do not, and I trust PHP to get along nicer
+# |     with older systems than Python and NodeJS.
 
 call_user_func(function() {
     define('PACKAGE_JSON_PATH', __DIR__ . DIRECTORY_SEPARATOR . 'package.json');
