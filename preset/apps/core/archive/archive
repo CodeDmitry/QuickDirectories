@@ -1,10 +1,24 @@
 #!/bin/bash
+
+# | Weak contract, Perl5 must exist,
+# |     otherwise the behavior of this script is
+# |     undefined.
+
+# | The current Directory.
 me=`dirname $0`
+# | Generates a unique directory name using our uuidgen 
+# |     Perl script.
 uuid=`perl "$me/uuidgen/uuidgen"`
 
+# | Show the user what the status of the directories
+# |     was before archiving.
 echo "Before: "
 $QD_APPS/core/quickstatus/quickstatus
 
+# | Make the archive directory,
+# |     and fill it with our directories.
+# | Also adds a date file to the archive,
+# |     so that the user can tell when it was archived.
 mycdir=$QD_ARCHIVES/$uuid
 mkdir $mycdir
 mv $QD_QUICK1 $mycdir
@@ -17,9 +31,13 @@ mv $QD_QUICK7 $mycdir
 mv $QD_QUICK8 $mycdir
 date > $mycdir/date.txt
 
-mkdir $QD_QUICK1 $QD_QUICK2 $QD_QUICK3 $QD_QUICK4\
+# | Remake our quick directories.
+mkdir $QD_QUICK1 $QD_QUICK2 $QD_QUICK3 $QD_QUICK4 \
       $QD_QUICK5 $QD_QUICK6 $QD_QUICK7 $QD_QUICK8
 
+# | Show to the user that they now have fresh directories
+# |     to use, and tell them where they were archived
+# |     so they don't panic.
 echo "After: "
 $QD_APPS/core/quickstatus/quickstatus
 echo -e "Archived into $mycdir."
