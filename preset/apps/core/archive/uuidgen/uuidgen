@@ -1,15 +1,30 @@
 #!/usr/bin/perl
+# | This misnamed file is responsible for generating a unique id
+# |     to use as a name where to place all the quick directories
+# |     to archive them away(to make room for more projects).
+# | The result is returned as a string written to stdout.
 (sub {
     use strict;
     use warnings;
 
+    # | We will use the environment variable $QD_ARCHIVES to
+    # |     make sure our generated value does not conflict
+    # |     with any existing archives.
     my $QD_ARCHIVES = $ENV{'QD_ARCHIVES'};
+    
     if (!($QD_ARCHIVES)) {
-        die "uuidgen> no QD_ARCHIVES env variable.\n" .
-            "please check your environment settings or reinstall.";
-        
+        die (
+            "uuidgen> no QD_ARCHIVES env variable.\n" 
+            . "please check your environment settings or reinstall."
+        );        
     }
 
+    # | The unique identifier will take the form of an 8 character
+    # |     hexedecimal representation, ranging from 00000000
+    # |     to ffffffff.
+    # | The first number that does not conflict with an existing
+    # |     archive is returned.
+    # | TODO: make the inner part of this block less magical.
     for (my $i = 0; $i <= 0xffffffff; ++$i) {
         #if (-e $QD
         my $tmp = sprintf("%08x", $i); 
