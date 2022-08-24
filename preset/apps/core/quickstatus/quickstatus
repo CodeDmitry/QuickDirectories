@@ -1,7 +1,9 @@
 #!/usr/bin/perl
+# | These variables are set in min-setup.sh
 use Env qw(QD_QUICK1 QD_QUICK2 QD_QUICK3 QD_QUICK4);
 use Env qw(QD_QUICK5 QD_QUICK6 QD_QUICK7 QD_QUICK8);
 
+# | Get the status of all of the eight directories.
 my ($s1, $s2, $s3, $s4, $s5, $s6, $s7, $s8) = (
     dirstat($QD_QUICK1),
     dirstat($QD_QUICK2),
@@ -13,9 +15,13 @@ my ($s1, $s2, $s3, $s4, $s5, $s6, $s7, $s8) = (
     dirstat($QD_QUICK8)
 );
 
+# | UNIX escape codes, 31=green, 32=red, 0 is reset.
 my $ready= "\e[32mready\e[0m";
 my $active= "\e[31mactive\e[0m";
 
+# | Display the 4x2 tabulated ready/active statements, letting
+# |     the user know which directories have no files and which
+# |     do.
 printf("\n");
 printf("%s.\t", $s1 == 0 ? "quick1 is $ready" : "quick1 is $active");
 printf("%s.\n", $s5 == 0 ? "quick5 is $ready" : "quick5 is $active");
@@ -30,16 +36,18 @@ printf("%s.\t", $s4 == 0 ? "quick4 is $ready" : "quick4 is $active");
 printf("%s.\n", $s8 == 0 ? "quick8 is $ready" : "quick8 is $active");
 printf("\n");
 
-# returns 0 if empty
-# returns 1 if active
+# | returns 0 if the directory specified by the first argument is empty.
+# | returns 1 if the directory specified by the first argument has files in it.
 sub dirstat
 {
     my $dirname = $_[0];
 
-    opendir my $dir, $dirname or die $!;
+    opendir(my $dir, $dirname) 
+        or die($!);
 
-    if( grep ! /^\.\.?$/, readdir $dir ){
+    if(grep (!/^\.\.?$/, readdir($dir))){
         return 1;
     }
+    
     return 0;
 }
