@@ -1,5 +1,5 @@
 #!/bin/bash
-# | Verifies whether it is safe to install QuickDirs. 
+# | Responsible for verifying whether it is safe to install QuickDirs(default), and for uninstalling QuickDirs if asked to(clean). 
 
 # | Some script-local variables.
 exit_success=0
