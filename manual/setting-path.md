@@ -1,4 +1,4 @@
-to set the path, add the following to ~/.bashrc or ~/.profile or both.
+To set the path, add the following to ~/.bashrc or ~/.profile or both.
 
 ```sh
 launch_quickdirs() {
