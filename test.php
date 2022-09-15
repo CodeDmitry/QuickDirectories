@@ -26,6 +26,7 @@ call_user_func(function() {
     }
 
     echo "All files found!";
+    
     return 0;
 });
 ?>
