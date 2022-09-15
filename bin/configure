@@ -1,31 +1,23 @@
 #!/bin/bash
-# -
-# checks if the path is safe for installation.
-# -
+# | Checks whether it is safe to install QuickDirectories.
 
-# global data division begin.
-    # exit code section begin.
-        exit_success=0
-        exit_unknown=1
-        exit_mkdir_root_fail=2
-        exit_copy_presets_fail=3
-        exit_clean_fail=4
-    # end section.
-
-    # global value section begin.
-        user=`id -u -n`
-        qdpath=$HOME/QuickDirs
-        pspath=../preset
-    # end global value section.
- # end division.
+# | Some script local variables.
+exit_success=0
+exit_unknown=1
+exit_mkdir_root_fail=2
+exit_copy_presets_fail=3
+exit_clean_fail=4
+user=`id -u -n`
+qdpath=$HOME/QuickDirs
+pspath=../preset
 
 function main()
 {
     if [ $# -eq 0 ]; then
-        # no arguments: just configure.
+        # | No arguments: just configure.
         (configure && return $?)
     else
-        # called in an unexpected way.
+        # | Called in an unexpected way.
         echo "Unknown calling convention."
         echo "calling info: "
         echo "    -argc => $#"
@@ -36,15 +28,13 @@ function main()
     fi
 }
 
-# -
-# create our directories and copy our files.
-# -
+# | Create our directories and copy our files.
 function configure()
 {
     mkdir $qdpath
     err=$?
     if [ $err -ne 0 ]; then
-        # could not create root directory for the installation.
+        # | Could not create root directory for the installation.
         echo "Cannot create root folder of QuickDirectories."
         echo "Please run the profiler."
         echo ""
@@ -54,7 +44,7 @@ function configure()
         return $exit_mkdir_root_fail
     fi
 
-    # copy our preset
+    # | Copy the presets to their respective directories.
     cp -r $pspath/* $qdpath
     err=$?
     if [ $err -ne 0 ]; then
@@ -86,9 +76,7 @@ function configure()
     echo ""
 }
 
-# procedure division.
-    main $@
-    err=$?
-    echo "exitting with code $err."
-    exit $err
-# end
+main $@
+err=$?
+echo "Script [configure.sh] has completed with code $err."
+exit $err
