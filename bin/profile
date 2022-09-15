@@ -1,7 +1,5 @@
 #!/bin/bash
-# -
-# checks if the path is safe for installation.
-# -
+# | Verifies whether it is safe to install QuickDirs. 
 
 # | Some script-local variables.
 exit_success=0
@@ -17,12 +15,12 @@ qdpath=$HOME/QuickDirs
 function main()
 {
     if [ $# -eq 0 ]; then
-        # no arguments: just do profiling.
+        # | No arguments: just do profiling.
         (profile && return $?)
     elif [ $# -eq 1 ] && [ $1 == "clean" ]; then
         (clean && return $?)
     else
-        # called in an unexpected way.
+        # | Called in an unexpected way.
         echo "Unknown calling convention."
         echo ""
         echo "calling info: "
@@ -65,7 +63,7 @@ function clean()
         err=$?
 
         if [ $? -ne 0 ]; then
-            # rm did not return 0, we failed to clean.
+            # | rm did not return 0, we failed to clean.
             echo "could not remove $qdpath from your filesystem."
             echo ""
             echo "rm returned with $err."
