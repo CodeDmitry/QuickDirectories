@@ -78,5 +78,5 @@ function configure()
 
 main $@
 err=$?
-echo "Script [configure.sh] has completed with code $err."
+echo "Script [configure] has completed with result code $err."
 exit $err
