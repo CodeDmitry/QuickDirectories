@@ -3,22 +3,16 @@
 # checks if the path is safe for installation.
 # -
 
-# global data division begin.
-    # exit code section begin.
-        exit_success=0
-        exit_unknown=1
-        exit_mkdir_root_fail=2
-        exit_copy_presets_fail=3
-        exit_clean_fail=4
-        exit_profile_dirty=5
-    # end section.
-
-    # global value section begin.
-        me=`basename $0`
-        user=`id -u -n`
-        qdpath=$HOME/QuickDirs
-    # end global value section.
- # end division.
+# | Some script-local variables.
+exit_success=0
+exit_unknown=1
+exit_mkdir_root_fail=2
+exit_copy_presets_fail=3
+exit_clean_fail=4
+exit_profile_dirty=5
+me=`basename $0`
+user=`id -u -n`
+qdpath=$HOME/QuickDirs
 
 function main()
 {
@@ -93,9 +87,7 @@ function clean()
     fi
 }
 
-# procedure division
-    main $@
-    err=$?
-    echo "exitting with code $err."
-    exit $err
-# end
+main $@
+err=$?
+echo "Script [profile] has completed with result code $err."
+exit $err
