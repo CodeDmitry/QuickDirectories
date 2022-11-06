@@ -17,7 +17,7 @@ jump to that directory.
 The goal of QuickDirectories is to already be done with small spike projects while others are busy waiting for their IDE(Integraded Development Environment such as VisualStudio/Eclipse) to load. QuickDirectories strongly reccomends learning to use `vim` as an editor. Feel free to use others, but it was
 designed with `vim` in mind.
 
-The common use case is to pick a favorite quickdir, then creating a directory with mkdir, working on that directory, then after
+The common use case is to pick a favorite quickdir(eq quick4), then creating a directory with `mkdir`, working on that directory, then after
 many directories are made, you can use another quickdir to make more projects. Once the quickdirs are full, you can type "archive"
 to have the contents of all archives be moved to location specified by `$QD_ARCHIVES` variable, which can be visited by simply typing
 `@qd_archives`. Archives supports multiple archives and does not risk collisions. It is up to you to figure out how to manage archives,
