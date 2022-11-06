@@ -24,7 +24,7 @@ to have the contents of all archives be moved to location specified by `$QD_ARCH
 I have not figured that out myself yet.
 
 It is written in Bash and Perl to ensure maximal portability; It has been tested to work successfully on MinGW, all Linux distributions I have tried,
-and Unix-likes(such as the popular operating system starting with M that shall not be named by a company whose name starts with A that also shall not be named that literally copyrighted a fruit that set out to eliminate user computing freedoms and raise a generation that does not know what plugins nor settings are).
+and Unix-likes(such as the popular operating system starting with M that shall not be named by a company whose name starts with A that also shall not be named that literally copyrighted a fruit that set out to eliminate user computing freedoms and raise a generation that does not know what plugins, settings, and sideloading are).
 
 ## <a name="features">Features</a>
 
