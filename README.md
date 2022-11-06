@@ -21,7 +21,8 @@ The common use case is to pick a favorite quickdir(eq quick4), then creating a d
 many directories are made, you can use another quickdir to make more projects. Once the quickdirs are full, you can type "archive"
 to have the contents of all archives be moved to location specified by `$QD_ARCHIVES` variable, which can be visited by simply typing
 `@qd_archives`. Archives supports multiple archives and does not risk collisions. It is up to you to figure out how to manage archives,
-I have not figured that out myself yet.
+I have not figured that out myself yet, but I suggest putting them into a 7zip archive as it will save space and make the archive faster
+to transfer to another disk(as file per file transfer is slow).
 
 It is written in Bash and Perl to ensure maximal portability; It has been tested to work successfully on MinGW, all Linux distributions I have tried,
 and Unix-likes(such as the popular operating system starting with M that shall not be named by a company whose name starts with A that also shall not be named that literally copyrighted a fruit that set out to eliminate user computing freedoms and raise a generation that does not know what plugins, settings are nor how to install anything outside of a "shop").
