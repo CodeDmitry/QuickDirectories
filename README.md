@@ -10,20 +10,25 @@
 
 ## <a name="intro">Introduction</a>
 
-> QuickDirectories is a simple way of managing programming workspace. That is, it lets you jump around very easily between 8 workspaces, 
-> making writing quick and dirty proofs of concepts, exercises, quick and easy. It also offers basic features such as flushing the 
-> eight directories into an archive directory. Made largely in Bash and Perl(and some PHP for package-verification) because they are always there. 
-> This project has been tested to work on old systems, as well as mac, and mingw/msys2. 
-> I use this tool daily when I have any quick and dirty code I want to write. 
-> This project lets me very quickly go to "quickX" and write my proof of concept, or if I am very lazy, I can just get comfortable using
-> one of the directories such as "quick4", and just "mkdir" there until I have too many, and start using another directory, then
-> when all are used up, I can archive the directories and go on. I will not give any reccomendations on how to manage your archives,
-> that headache is your problem, what matters is how fast you can move from "I have an idea I want to try" to "I am testing my idea",
-> and while most people spend minutes starting up their IDE, and creating and configuring a new project, I am already busy writing the code.
+QuickDirectories makes it easy to navigate around a programming workspace. That is, it lets you jump around very easily between 8 workspaces, 
+named quick1, quick2, ...quick8. The directories can easily be accessed by simply typing "quick1", "quick2", ... "quick8" which will immediatly
+jump to that directory.
+
+The goal of QuickDirectories is to already be done with small spike projects while others are busy waiting for their IDE(Integraded Development Environment such as VisualStudio/Eclipse) to load. QuickDirectories strongly reccomends learning to use `vim` as an editor. Feel free to use others, but it was
+designed with `vim` in mind.
+
+The common use case is to pick a favorite quickdir, then creating a directory with mkdir, working on that directory, then after
+many directories are made, you can use another quickdir to make more projects. Once the quickdirs are full, you can type "archive"
+to have the contents of all archives be moved to location specified by `$QD_ARCHIVES` variable, which can be visited by simply typing
+`@qd_archives`. Archives supports multiple archives and does not risk collisions. It is up to you to figure out how to manage archives,
+I have not figured that out myself yet.
+
+It is written in Bash and Perl to ensure maximal portability; It has been tested to work successfully on MinGW, all Linux distributions I have tried,
+and Unix-likes(such as the popular operating system starting with M that shall not be named by a company whose name starts with A that also shall not be named that literally copyrighted a fruit that set out to eliminate user computing freedoms and raise a generation that does not know what plugins nor settings are).
 
 ## <a name="features">Features</a>
 
-QuickDirectories has many core apps, and capacity to extend and modify.
+QuickDirectories has many core apps, and is extensible through modifying `my-app-setup.sh` provided.
 
 <a name="core-apps">Core Apps</a>
 
