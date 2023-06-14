@@ -10,12 +10,9 @@
 
 ## <a name="intro">Introduction</a>
 
-QuickDirectories makes it easy to navigate around a programming workspace. That is, it lets you jump around very easily between 8 workspaces, 
-named quick1, quick2, ...quick8. The directories can easily be accessed by simply typing "quick1", "quick2", ... "quick8" which will immediatly
-jump to that directory.
+QuickDirectories is a collection of tools that makes it easy to hop between 8 projects or workspaces you are working on. It creates 8 directories, quick1, quick2, ... quick8 that can easily be accessed by typing their names.
 
-The goal of QuickDirectories is to already be done with small spike projects while others are busy waiting for their IDE(Integraded Development Environment such as VisualStudio/Eclipse) to load. QuickDirectories strongly reccomends learning to use `vim` as an editor. Feel free to use others, but it was
-designed with `vim` in mind.
+The goal of QuickDirectories is make it as easy as possible to make many small spike projects, which are crucical for learning new programming languages, checking whether features you expect to work a specific way work the way you expect, and more.
 
 The common use case is to pick a favorite quickdir(eq quick4), then creating a directory with `mkdir`, working on that directory, then after
 many directories are made, you can use another quickdir to make more projects. Once the quickdirs are full, you can type "archive"
@@ -24,8 +21,8 @@ to have the contents of all archives be moved to location specified by `$QD_ARCH
 I have not figured that out myself yet, but I suggest putting them into a 7zip archive as it will save space and make the archive faster
 to transfer to another disk(as file per file transfer is slow).
 
-It is written in Bash and Perl to ensure maximal portability; It has been tested to work successfully on MinGW, all Linux distributions I have tried,
-and Unix-likes(such as the popular operating system starting with M that shall not be named by a company whose name starts with A that also shall not be named that literally copyrighted a fruit that set out to eliminate user computing freedoms and raise a generation that does not know what plugins, settings are nor how to install anything outside of a "shop").
+It is written in Bash and Perl to ensure maximal portability; It has been tested to work successfully on MinGW, all Linux distributions,
+and Unix-likes, except Termux.
 
 ## <a name="features">Features</a>
 
